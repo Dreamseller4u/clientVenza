@@ -1,0 +1,37 @@
+.TextWrapper {
+    padding: 10px 60px;
+    text-align-last: center;
+
+}
+.TextWrapper a{
+    color: red;
+    font-weight: bold;
+}
+.TextWrapper a:hover{
+    color: red;
+    border-bottom: 2px solid red;
+}
+.TextWrapper h1 {
+    text-align: center;
+    border-bottom: 3px solid red;
+}
+.TextWrapper span
+{
+    width: 70%;
+    text-align-last: left;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:739px;}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:739px;
+}

@@ -1,0 +1,133 @@
+@media only screen and (max-width:490px){
+    .mainContent{
+        padding: 0% 10%!important;
+    }
+ 
+}
+.mainContent{
+    display: table;
+    border:1px solid lightgray;
+    border-radius:100px;
+    width:100%;
+    margin-bottom:50px;
+}
+.card {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin: 35px;
+    -webkit-box-shadow: 1px 25px 36px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 25px 36px -30px rgba(0,0,0,0.75);
+    box-shadow: 1px 25px 36px -30px rgba(0,0,0,0.75);
+    border-radius: 75px;
+    font-family: auto;
+    
+}
+.card:hover .cardInside{
+        display: block;
+    }
+
+.cardFront {
+    
+}
+.cardImage img{
+    display: block;
+    border-radius: 100px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border: 5px solid lightgreen;
+    -webkit-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+}
+.busy img {
+    border: 5px solid lightcoral;
+}
+.cardContent{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardInside {
+    display: none;
+    background-color:red;
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    height: 300px;
+    border-radius: 45px;
+    padding: 20px;
+    text-align: center;
+}
+.btnBook{
+    position: relative;
+    bottom: 0px;
+    border-radius: 50px!important;
+}
+.thumbImg{
+width: 200px;
+}
+.thumbImg1 {
+   
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    float: left;
+    margin: 5px;
+}
+.thumbnail {
+    max-width: 100%;
+  }
+  
+  .italic { font-style: italic; }
+  .small { font-size: 0.8em; }
+  
+  /** LIGHTBOX MARKUP **/
+  
+  .lightbox {
+      /** Default lightbox to hidden */
+      display: none;
+      /** Position and style */
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.8);
+  }
+  
+  .lightbox img {
+      /** Pad the lightbox image */
+      max-width: 50%;
+      max-height: 80%;
+      margin-top: 2%;
+  }
+  
+  .lightbox:target {
+      /** Remove default browser outline */
+      outline: none;
+  
+      /** Unhide lightbox **/
+      display: block;
+  }
+  .thumb {
+    height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    float: left;
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+  .activeBtn {
+    position: relative;
+    top: -10px;
+  }
+.centerBtns{
+    position: relative;
+    top: -40px;
+    text-align: center;
+}

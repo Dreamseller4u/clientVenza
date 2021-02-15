@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Redirect, withRouter, NavLink, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { setUserThunk, signOutThunk } from './redux/usersReducer'
+import { compose } from 'redux';
+import { Backend } from './components/Admin/AdminContainer';
+import LoginComponent from './components/Login/LoginComponent';
+import HomeContainer from './components/HomeComponents/HomeInterface/HomeContainer';
+import NavbarContainer from './components/common/NavBar/NavbarContainer';
+import SearchBikesListContainer from './components/HomeComponents/BikesList/SearchBikesListContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  componentDidMount() {
+    this.props.setUserThunk()
+    
+  }
+  render() {
+    return (
+      <>
+        <main>
+          <NavbarContainer />
+          <Switch>
+            <Route exact path='/' component={HomeContainer} />
+            <Route exact path='/search' render={() => <SearchBikesListContainer />} />
+            <Route path='/backend' component={Backend} />
+            <Route path='/login' render={() => <LoginComponent />} />
+          </Switch>
+        </main>
+      </>
+    )
+  }
 }
 
-export default App;
+let mapStateToProps = (state) => {
+  return {
+    isAuth: state.usersPage.isAuth,
+    initialApp: state.usersPage.initialApp
+  }
+}
+export default compose(
+  withRouter,
+  connect(mapStateToProps, { setUserThunk, signOutThunk }))(App);

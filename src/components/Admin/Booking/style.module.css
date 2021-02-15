@@ -1,0 +1,21 @@
+.buttons{
+    position: fixed;
+    top: 110px;
+    right: 0px;
+    text-align: center;
+    width: 200px;
+}
+.buttons i {
+    padding: 10px;
+    border-radius: 30px;
+}
+.buttons button{
+    border-radius: 30px;
+}
+
+.btnDropDown{
+    display: none;
+}
+.buttons:hover .btnDropDown {
+    display: block;
+}

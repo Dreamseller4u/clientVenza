@@ -1,0 +1,29 @@
+.container {
+    margin:0 auto ;
+    width: 800px;
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.linkActive
+{
+    color:red;
+    text-transform: uppercase;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.navHead img {
+    float: left;
+}
+.card {
+    max-width: 300px;
+    float: left;
+    padding: 1rem;
+    margin: 0 auto;
+}

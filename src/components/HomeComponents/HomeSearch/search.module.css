@@ -1,0 +1,66 @@
+
+@media only screen and (max-width: 375px){
+    .searchBox {
+        position: absolute;
+        height: 61%!important;
+        width: 80% !important;
+        background: white;
+        border-radius: 20px;
+        top: 65%!important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 35px!important;
+        box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.75);
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .searchBox {
+        position: absolute;
+        height: 90%!important;
+        width: 80% !important;
+        background: white;
+        border-radius: 20px;
+        top: 97%!important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 33px!important;
+        box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.75);
+    }
+}
+
+.searchBox{
+    position: absolute;
+    /* height: 45%; */
+    width: 80%;
+    background: white;
+    border-radius: 20px;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 70px;
+    -webkit-box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 41px -8px rgba(0,0,0,0.75);
+}
+.searchHead {
+    position: absolute;
+    height: 100px;
+    width: 330px;
+    background: white;
+    border-radius: 45px;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%, -75%);
+    -webkit-box-shadow: 0px -15px 30px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -15px 30px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px -15px 30px -20px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+.searchHead p
+{
+    position: absolute;
+    left: 17%;
+    font-size: 30px;
+    top: 30px;
+}

@@ -1,0 +1,36 @@
+
+@media only screen and (max-width: 375px){
+    .mainTitle h4{
+        width: 95%!important;
+    }
+}
+@media only screen and (max-width: 490px){
+    .mainTitle h4{
+        width: 95%!important;
+    }
+}
+
+
+
+.background  {
+    height: 1000px;
+    width: auto;
+   
+    background:url('../../../assets/img/background.jpg');
+}
+.mainTitle {
+    position: relative;
+    text-align: -webkit-center;
+}
+.mainTitle h4{
+    position: relative;
+    text-align: center;
+    top: -60px;
+    background: white;
+    padding: 40px;
+    border-radius: 47px;
+    -webkit-box-shadow: 0px -15px 30px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -15px 30px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px -15px 30px -20px rgba(0,0,0,0.75);
+    width: 600px;
+}

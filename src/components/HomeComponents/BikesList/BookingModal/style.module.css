@@ -1,0 +1,9 @@
+.btns{
+    position: relative;
+    bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+p {
+    text-align: left;
+}
